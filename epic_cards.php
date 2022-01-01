@@ -8,6 +8,7 @@
 	if ($conn->query($sql) === TRUE) {
 		echo "Success!";
 	}
+	mail("tomfaulder@gmail.com", "subject", "new submission");
 	$conn->close();
 
 ?>
